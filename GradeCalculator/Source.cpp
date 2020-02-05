@@ -5,7 +5,9 @@ using namespace std;
 int main()
 {
 	//Declare variables
-	double points = 0, pointsPossible = 0, percent = 0;
+	double points = 0,
+		pointsPossible = 0,
+		percent = 0;
 	char grade = 'A';
 	
 	//Ask user for the information we need
@@ -21,6 +23,10 @@ int main()
 	/* do math and convert decimal result into percent
 	and output that with the correct format*/
 	percent = (points / pointsPossible) * 100;
+
+
+
+	percent = rand() % 101;
 	cout << percent << "%" << endl;
 
 	//Assign Letter grade based on percentage
@@ -67,6 +73,15 @@ int main()
 		cout << "Turn in your badge." << endl;
 		break;
 	}
+
+	int n = 0;
+
+	for (int i = 0; i < 101; i++)
+	{
+		n++;
+		cout << n << endl;
+	}
+
 
 	//cast double as float and assign to memory as pi
 	float pi = float(2 * acos(0.0));
